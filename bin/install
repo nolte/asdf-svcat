@@ -24,7 +24,7 @@ install() {
 
   local platform="$(uname | tr '[:upper:]' '[:lower:]')"
   local bin_install_path="$install_path/bin"
-  local binary_path="$bin_install_path/kamel"
+  local binary_path="$bin_install_path/svcat"
   local -r download_url="$(get_download_url "${version}" "${platform}")"
   local -r download_path="${TMP_DOWNLOAD_DIR}/$(get_filename ${version} ${platform})"
 
